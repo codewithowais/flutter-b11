@@ -1,3 +1,4 @@
+import 'package:b11/screens/status_view.dart';
 import 'package:b11/widgets/customChatTile.dart';
 import 'package:flutter/material.dart';
 
@@ -30,6 +31,19 @@ class Whatsapp extends StatelessWidget {
             time: "02:18",
           ),
           SizedBox(height: 10),
+
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (context) => const StatusView(),
+                ),
+              );
+            },
+            child: Text("Go To Status View "),
+          ),
+
+          Image.asset("assets/images/user-avatar.png"),
         ],
       ),
     );
