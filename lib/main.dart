@@ -1,5 +1,6 @@
 // import 'package:b11/screens/abc.dart';
 // import 'package:b11/screens/whatsapp.dart';
+import 'package:b11/screens/newclass.dart';
 import 'package:b11/screens/whatsapp_new.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: WhatsappNew(),
+      home: Newclass(),
     );
   }
 }
